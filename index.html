@@ -21,15 +21,15 @@
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    <div class="container w-screen">
+  <body class="items-center h-screen sm:flex sm:justify-center">
+    <div class="container flex-row sm:w-fit max-sm:w-screen sm:flex sm:rounded-2xl sm:shadow-lg">
       <!-- RESULT -->
       <div
-        class="flex flex-col items-center p-6 text-center bg-gradient h-fit rounded-b-2xl result"
+        class="flex flex-col items-center p-6 text-center sm:w-72 bg-gradient max-sm:h-fit rounded-b-2xl sm:rounded-2xl result"
       >
         <h4 class="mb-5 font-bold text-light-lavender">Your Result</h4>
         <div
-          class="flex flex-col pt-5 pb-5 mb-5 rounded-full result-bubble w-fit p-7 bubble-gradient"
+          class="flex flex-col pb-5 rounded-full pt-7 mb-7 result-bubble w-fit p-9 bubble-gradient"
         >
           <span class="text-6xl font-extrabold text-white">76</span>
           <span class="text-base font-bold faint-text">of 100</span>
@@ -43,7 +43,7 @@
       </div>
       <!-- SUMMARY -->
 
-      <div class="m-6 summary">
+      <div class="m-6 summary sm:w-72">
         <h4 class="mb-6 font-bold text-dark-grey-blue">Summary</h4>
         <div class="flex flex-col summary-items">
           <div class="flex p-3 mb-3 rounded-lg bg-red-trans summary-item text-red">
