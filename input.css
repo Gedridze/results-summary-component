@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h4 {
+    @apply text-lg;
+  }
+}
+html {
+  font-size: 18px;
+}
+
+.faint-text {
+  @apply text-light-lavender text-opacity-50;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-b from-grad-sl-blue to-grad-rl-blue;
+}
+
+.bubble-gradient {
+    @apply bg-gradient-to-b from-grad-v-blue to-grad-rl-blue
+}
