@@ -25,22 +25,85 @@
     <div class="container w-screen">
       <!-- RESULT -->
       <div
-        class="result text-center flex items-center flex-col bg-gradient h-fit rounded-b-2xl p-6"
+        class="flex flex-col items-center p-6 text-center bg-gradient h-fit rounded-b-2xl result"
       >
-        <h4 class="text-light-lavender font-bold mb-5">Your Result</h4>
+        <h4 class="mb-5 font-bold text-light-lavender">Your Result</h4>
         <div
-          class="result-bubble flex flex-col w-fit p-7 pb-5 pt-5 bubble-gradient rounded-full mb-5"
+          class="flex flex-col pt-5 pb-5 mb-5 rounded-full result-bubble w-fit p-7 bubble-gradient"
         >
-          <span class="text-white font-extrabold text-6xl">76</span>
-          <span class="faint-text font-bold text-base">of 100</span>
+          <span class="text-6xl font-extrabold text-white">76</span>
+          <span class="text-base font-bold faint-text">of 100</span>
         </div>
         <div class="result-text-container">
-          <h1 class="text-white text-xl font-bold mb-2">Great</h1>
-          <p class="text-light-lavender font-semibold">
+          <h1 class="mb-2 text-xl font-bold text-white">Great</h1>
+          <p class="font-semibold text-light-lavender">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
       </div>
+      <!-- SUMMARY -->
 
+      <div class="m-6 summary">
+        <h4 class="mb-6 font-bold text-dark-grey-blue">Summary</h4>
+        <div class="flex flex-col summary-items">
+          <div class="flex p-3 mb-3 rounded-lg bg-red-trans summary-item text-red">
+            <img
+              class="icon"
+              src="./assets/images/icon-reaction.svg"
+              alt="icon-reaction"
+            />
+            <p class="font-bold">Reaction</p>
+            <span class="flex ml-auto font-bold score text-light-lavender">
+              <div class="current text-dark-grey-blue">80</div>
+              /
+              <div class="total">100</div>
+            </span>
+          </div>
+
+          <div class="flex p-3 mb-3 rounded-lg bg-orange-trans summary-item text-orange">
+            <img
+              class="icon"
+              src="./assets/images/icon-memory.svg"
+              alt="icon-reaction"
+            />
+            <p class="font-bold">Memory</p>
+            <span class="flex ml-auto font-bold score text-light-lavender">
+              <div class="current text-dark-grey-blue">92</div>
+              /
+              <div class="total">100</div>
+            </span>
+          </div>
+
+          <div class="flex p-3 mb-3 rounded-lg bg-green-trans summary-item text-green">
+            <img
+              class="icon"
+              src="./assets/images/icon-verbal.svg"
+              alt="icon-reaction"
+            />
+            <p class="font-bold">Verbal</p>
+            <span class="flex ml-auto font-bold score text-light-lavender">
+              <div class="current text-dark-grey-blue">62</div>
+              /
+              <div class="total">100</div>
+            </span>
+          </div>
+
+          <div class="flex p-3 mb-3 rounded-lg bg-blue-trans summary-item text-blue">
+            <img
+              class="icon"
+              src="./assets/images/icon-visual.svg"
+              alt="icon-reaction"
+            />
+            <p class="font-bold">Visual</p>
+            <span class="flex ml-auto font-bold score text-light-lavender">
+              <div class="current text-dark-grey-blue">72</div>
+              /
+              <div class="total">100</div>
+            </span>
+          </div>
+        </div>
+        <button type="button" class="w-full pt-3 pb-3 mt-2 font-bold text-white rounded-full button bg-dark-grey-blue">Continue</button>
+      </div>
+    </div>
   </body>
 </html>

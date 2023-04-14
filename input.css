@@ -12,7 +12,7 @@ html {
 }
 
 .faint-text {
-  @apply text-light-lavender text-opacity-50;
+  @apply text-opacity-50 text-light-lavender;
 }
 
 .bg-gradient {
@@ -20,5 +20,9 @@ html {
 }
 
 .bubble-gradient {
-    @apply bg-gradient-to-b from-grad-v-blue to-grad-rl-blue
+  @apply bg-gradient-to-b from-grad-v-blue to-grad-rl-blue;
+}
+
+.button:hover {
+    @apply bubble-gradient
 }
